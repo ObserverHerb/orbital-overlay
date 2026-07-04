@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>observerherb@vivaldi.net</email>
+		<name>Herb Miller Jr.</name>
+	</maintainer>
+	<use>
+		<flag name="smart-bypass">Enable auto-bypass on silence</flag>
+		<flag name="namcore">Support loading models using the NAM Core implemenations</flag>
+		<flag name="inline-gemm">Enable use of inline matrix multiplication in NAM Core</flag>
+		<flag name="a2-fast">Enable use of A2 fast path wavenet in NAM Core</flag>
+		<flag name="static-rtneural">Build static RTNeural model architectures</flag>
+		<flag name="static-wavenet">Build internal static WaveNet model architectures</flag>
+		<flag name="static-lstm">Build internal static LSTM model architectures</flag>
+		<flag name="fastmath">Use the same math approximations as NAM Core</flag>
+		<flag name="eigenmath">Use Eigen's builtin tanh math approximation</flag>
+		<flag name="stdmath">Use standard math functions, no approxmation</flag>
+	</use>
+</pkgmetadata>
