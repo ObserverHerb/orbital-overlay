@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>observerherb@vivaldi.net</email>
+		<name>Herb Miller Jr.</name>
+	</maintainer>
+	<use>
+		<flag name="benchmarks">Build the Box3D benchmarks</flag>
+		<flag name="double-precision">Enable double precision for large worlds</flag>
+		<flag name="sanitize">Enable sanitizers for some builds</flag>
+		<flag name="simd">Enable SIMD math (faster)</flag>
+		<flag name="validate">Enable heavy validation</flag>
+	</use>
+</pkgmetadata>
