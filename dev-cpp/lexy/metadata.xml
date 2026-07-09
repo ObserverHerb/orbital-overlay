@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>observerherb@vivaldi.net</email>
+		<name>Herb Miller Jr.</name>
+	</maintainer>
+	<use>
+		<flag name="benchmarks">Whether or not benchmarks should be built</flag>
+	</use>
+</pkgmetadata>
