@@ -8,7 +8,7 @@ inherit cmake
 DESCRIPTION="A plugin for OBS designed to expand its masking functionalities."
 HOMEPAGE="https://f15y.com"
 
-SRC_URI="https://github.com/FiniteSingularity/obs-advanced-masks/archive/v1.6.1.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/FiniteSingularity/obs-advanced-masks/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 KEYWORDS="~amd64"
 
 LICENSE="GPL-2"

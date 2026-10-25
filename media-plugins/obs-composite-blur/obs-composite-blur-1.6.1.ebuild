@@ -8,7 +8,7 @@ inherit cmake
 DESCRIPTION="A comprehensive blur plugin for OBS that provides several different blur algorithms, and proper compositing."
 HOMEPAGE="https://f15y.com"
 
-SRC_URI="https://github.com/FiniteSingularity/obs-composite-blur/archive/v1.6.1.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/FiniteSingularity/obs-composite-blur/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 KEYWORDS="~amd64"
 
 LICENSE="GPL-2"

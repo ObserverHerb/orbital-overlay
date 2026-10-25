@@ -8,7 +8,7 @@ inherit cmake
 DESCRIPTION="An OBS plugin to provide efficient Stroke, Glow, and Shadow effects on masked sources."
 HOMEPAGE="https://f15y.com"
 
-SRC_URI="https://github.com/FiniteSingularity/obs-stroke-glow-shadow/archive/v1.6.1.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/FiniteSingularity/obs-stroke-glow-shadow/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 KEYWORDS="~amd64"
 
 LICENSE="GPL-2"
