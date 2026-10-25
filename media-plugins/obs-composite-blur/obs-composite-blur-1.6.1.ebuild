@@ -18,7 +18,7 @@ IUSE="qt6 frontend"
 COMMON_DEPENDS="
 	>=media-video/obs-studio-33.0.0
 	qt6? (
-		dev-qt/qtbase:6
+		dev-qt/qtbase:6[widgets]
 	)
 "
 DEPEND="${COMMON_DEPENDS}"
