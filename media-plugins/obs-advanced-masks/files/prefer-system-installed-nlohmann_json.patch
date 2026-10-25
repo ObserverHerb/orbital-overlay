@@ -1,0 +1,21 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 7acfa74..7bb8277 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -34,9 +34,13 @@ if(EXISTS "${JSON_TARBALL_PATH}")
+   add_library(nlohmann_json INTERFACE)
+   target_include_directories(nlohmann_json INTERFACE "${CMAKE_BINARY_DIR}/json/single_include")
+ else()
+-  include(FetchContent)
+-  FetchContent_Declare(json URL https://github.com/nlohmann/json/releases/download/v3.11.3/json.tar.xz)
+-  FetchContent_MakeAvailable(json)
++  # Try to find a system-installed nlohmann_json (Debian: nlohmann-json3-dev)
++  find_package(nlohmann_json QUIET)
++  if(NOT nlohmann_json_FOUND)
++    include(FetchContent)
++    FetchContent_Declare(json URL https://github.com/nlohmann/json/releases/download/v3.11.3/json.tar.xz)
++    FetchContent_MakeAvailable(json)
++  endif()
+ endif()
+ 
+ find_package(CURL REQUIRED)

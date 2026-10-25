@@ -24,8 +24,13 @@ COMMON_DEPENDS="
 	dev-cpp/nlohmann_json
 	net-misc/curl
 "
+BDEPEND="${COMMON_DEPENDS}"
 DEPEND="${COMMON_DEPENDS}"
 RDEPEND="${COMMON_DEPENDS}"
+
+PATCHES=(
+    "${FILESDIR}/prefer-system-installed-nlohmann_json.patch"
+)
 
 src_configure() {
 	local mycmakeargs=(
