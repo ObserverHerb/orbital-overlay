@@ -44,7 +44,7 @@ BDEPEND="
 		llvm-core/clang-toolchain-symlinks:${LLVM_SLOT}
 		llvm-runtimes/compiler-rt:${LLVM_SLOT}
 		llvm-runtimes/compiler-rt-sanitizers:${LLVM_SLOT}
-		llvm-runtimes/openmp:${LLVM_SLOT}
+		llvm-runtimes/openmp
 		llvm-core/clang-linker-config:${LLVM_SLOT}
 		llvm-runtimes/clang-rtlib-config:${LLVM_SLOT}
 		llvm-runtimes/clang-unwindlib-config:${LLVM_SLOT}
