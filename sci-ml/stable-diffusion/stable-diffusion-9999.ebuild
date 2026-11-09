@@ -98,6 +98,7 @@ src_configure() {
 		-DCMAKE_POSITION_INDEPENDENT_CODE=ON
 		-DSD_BIN_INSTALL_DIR=/usr/bin
 		-DSD_LIB_INSTALL_DIR=$(get_libdir)
+		_DSD_SERVER_BUILD_FRONTEND=OFF
 	)
 
 	cmake_src_configure
