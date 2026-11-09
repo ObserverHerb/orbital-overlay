@@ -1,0 +1,7 @@
+# /etc/conf.d/stable-diffusion
+# Runtime configurations for Stable Diffusion
+
+SD_PORT="8080"
+SD_MODEL=""
+SD_LLM=""
+SD_VAE=""

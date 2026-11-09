@@ -1,0 +1,20 @@
+[Unit]
+Description=Stable Diffusion C++ HTTP Server (sd-server)
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/tmp
+ExecStart=/usr/bin/sd-server \
+	--diffusion-model ${SD_MODEL} \
+	--llm ${SD_LLM} \
+	--vae ${SD_VAE} \
+	--listen-ip 0.0.0.0 \
+	--listen-port ${SD_PORT}
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
