@@ -39,7 +39,7 @@ BDEPEND="
 		llvm-core/lld-toolchain-symlinks:${LLVM_SLOT}
 		llvm-core/llvm-toolchain-symlinks:${LLVM_SLOT}
 		llvm-core/llvmgold
-		llvm-core/clang-common:${LLVM_SLOT}
+		llvm-core/clang-common
 		llvm-runtimes/clang-runtime:${LLVM_SLOT}
 		llvm-core/clang-toolchain-symlinks:${LLVM_SLOT}
 		llvm-runtimes/compiler-rt:${LLVM_SLOT}
